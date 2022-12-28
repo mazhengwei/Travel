@@ -1,19 +1,20 @@
 <template>
   <div>
-    <div class="home">hello world</div>
+    <home-header></home-header>
   </div>
 </template>
 
 <script>
+import HomeHeader from './components/Header.vue'
 export default {
-  /* eslint-disable */
-  name: 'Home'
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: 'Home',
+  components: {
+    HomeHeader
+  }
 }
 </script>
 
 <style scoped>
-.home {
-  font-size: 50px;
-}
 
 </style>
